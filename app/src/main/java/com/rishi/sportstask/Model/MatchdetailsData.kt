@@ -10,6 +10,9 @@ class MatchdetailsData {
     @SerializedName("Team_Away")
     var Team_Away: String? = null
 
+    @SerializedName("Match")
+    var matchdata: MatchData? = null
+
     @SerializedName("Series")
     var seriesdata: SeriesData? = null
 

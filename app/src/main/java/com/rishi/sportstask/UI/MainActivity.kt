@@ -1,6 +1,8 @@
 package com.rishi.sportstask.UI
 
 import android.app.ProgressDialog
+import android.content.Context
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
@@ -39,6 +41,9 @@ class MainActivity : AppCompatActivity() {
             binding.txtStatus.text = it.Status
             binding.txtResult.text = it.Result
             binding.txtUmpire.text = it.officialsdata!!.Umpires
+            binding.txtTourname.text = it.seriesdata!!.Tour_Name
+            binding.txtVenue.text = it.venuedata!!.Name
+            binding.txtDateTime.text = it.matchdata!!.Date + ", " + it.matchdata!!.Time
         })
     }
 
@@ -56,4 +61,10 @@ class MainActivity : AppCompatActivity() {
         if (progressDialog!!.isShowing) progressDialog!!.dismiss()
     }
 
+    override fun attachBaseContext(newBase: Context) {
+        val override = Configuration(newBase.resources.configuration)
+        override.fontScale = 1.0f
+        applyOverrideConfiguration(override)
+        super.attachBaseContext(newBase)
+    }
 }

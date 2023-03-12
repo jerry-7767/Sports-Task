@@ -37,8 +37,9 @@
                         android:layout_centerVertical="true"
                         android:drawableStart="@drawable/icon_weather"
                         android:drawablePadding="4dp"
+                        android:fontFamily="@font/poppins_medium"
                         android:textColor="@color/white"
-                        android:textSize="14sp" />
+                        android:textSize="12sp" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
@@ -56,6 +57,7 @@
                             android:layout_marginEnd="4dp"
                             android:drawableStart="@drawable/icon_status"
                             android:drawablePadding="6dp"
+                            android:fontFamily="@font/poppins_medium"
                             android:padding="4dp"
                             android:textColor="@color/black"
                             android:textSize="12sp" />
@@ -79,10 +81,11 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
                         android:gravity="center"
                         android:text="Weather"
                         android:textColor="@color/white"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="35dp"
@@ -104,10 +107,11 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
                         android:gravity="center"
                         android:text="Weather"
                         android:textColor="@color/white"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -117,7 +121,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
@@ -148,7 +153,7 @@
             <com.google.android.material.card.MaterialCardView
                 style="@style/CustomCardViewStyle"
                 android:layout_width="match_parent"
-                android:layout_height="15dp"
+                android:layout_height="20dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="-7dp"
                 android:layout_marginEnd="50dp"
@@ -172,14 +177,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
             android:text="Teams &amp; players info "
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppins_medium"
             android:text="View"
             android:textColor="@color/grey"
             android:textSize="16sp" />
@@ -208,9 +215,9 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/icon_date_time"
                 android:drawablePadding="10dp"
-                android:text="Weather"
+                android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/black"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/txt_tourname"
@@ -219,9 +226,9 @@
                 android:layout_marginTop="10dp"
                 android:drawableStart="@drawable/icon_tour"
                 android:drawablePadding="10dp"
-                android:text="Weather"
+                android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/black"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/txt_umpire"
@@ -230,8 +237,9 @@
                 android:layout_marginTop="10dp"
                 android:drawableStart="@drawable/icon_umpire"
                 android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/black"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/txt_venue"
@@ -240,9 +248,9 @@
                 android:layout_marginTop="10dp"
                 android:drawableStart="@drawable/icon_venue"
                 android:drawablePadding="10dp"
-                android:text="Weather"
+                android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/black"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
         </LinearLayout>
 
