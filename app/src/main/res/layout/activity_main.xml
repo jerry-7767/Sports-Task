@@ -79,11 +79,9 @@
                         android:id="@+id/txt_team_name_1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
                         android:layout_weight="1"
                         android:fontFamily="@font/poppins_medium"
                         android:gravity="center"
-                        android:text="Weather"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -105,11 +103,9 @@
                         android:id="@+id/txt_team_name_2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
                         android:layout_weight="1"
                         android:fontFamily="@font/poppins_medium"
                         android:gravity="center"
-                        android:text="Weather"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 

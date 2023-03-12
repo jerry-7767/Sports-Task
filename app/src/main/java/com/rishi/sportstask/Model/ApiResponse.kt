@@ -1,5 +1,6 @@
 package com.rishi.sportstask.Model
 
+import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 class ApiResponse {
@@ -11,5 +12,7 @@ class ApiResponse {
     var innigsdata: List<InnigsData>? = null
 
     @SerializedName("Teams")
-    var teamsdata: TeamsData? = null
+    @Expose
+    val data: Map<String, TeamDetailsData>? = null
+
 }
