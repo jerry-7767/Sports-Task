@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var viewModel: TeamViewModel
     var strteam1: String? = null
     var strteam2: String? = null
+    var strteam1_name: String? = null
+    var strteam2_name: String? = null
     val api = RetrofitBase().getClient()!!.create(ApiService::class.java)
     private var progressDialog: ProgressDialog? = null
 
@@ -54,9 +56,19 @@ class MainActivity : AppCompatActivity() {
             binding.txtTeamName1.text = it[strteam1]!!.Name_Short
             binding.txtTeamName2.text = it[strteam2]!!.Name_Short
 
+            strteam1_name = it[strteam1]!!.Name_Full
+            strteam2_name = it[strteam2]!!.Name_Full
+
+//            val hellocheck = it[strteam1]?.playersdetailsdata?.get("3852")?.Name_Full
+//            Log.e("checkhelloche", hellocheck.toString())
+
         })
         binding.rlViewTeamPlayersInfo.setOnClickListener {
             val intent = Intent(this@MainActivity, TeamPlayersActivity::class.java)
+                .putExtra("team1",strteam1)
+                .putExtra("team2",strteam2)
+                .putExtra("team1_name",strteam1_name)
+                .putExtra("team2_name",strteam2_name)
             startActivity(intent)
         }
     }
